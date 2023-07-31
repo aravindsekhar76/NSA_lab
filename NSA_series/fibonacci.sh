@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bas
 
 read -p "enter the limit: " n
 
