@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "enter the limit: " n
+read -p "enter the limit: " 
 
 a=0
 b=1
