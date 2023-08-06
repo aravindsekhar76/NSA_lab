@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "enter numbers : " n1 n2 n3
+read -p "enter numbers : " n1 n2 n
 
 if [ $n1 -gt $n2 ] && [ $n1 -gt $n3 ] 
 then
