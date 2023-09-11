@@ -1,0 +1,47 @@
+Sed command
+Substituting Text:
+The most common use of sed is for text substitution. You can use the s command to replace one string with another:
+sed 's/old_text/new_text/' input.txt
+#
+Replacing All Occurrences:
+
+To replace all occurrences of old_text in each line, use the g flag:
+sed 's/old_text/new_text/g' input.txt
+#
+In-Place Editing:
+
+To edit a file in-place (i.e., modify the file directly), use the -i option:
+sed -i 's/old_text/new_text/g' input.txt
+#
+Deleting Lines:
+
+To delete lines that match a pattern, use the d command:
+sed '/pattern_to_delete/d' input.txt
+#
+Printing Specific Lines:
+
+You can print specific lines using the p command:
+sed -n '1,5p' input.txt\
+#
+Append after a specific line:
+
+sed '3a\New line to append' input.txt
+#
+Insert before a specific line:
+
+sed '3i\New line to insert' input.txt
+#
+Matching Any Character:
+
+The . (dot) in regex matches any character. For example, to match any three characters followed by "abc":
+
+sed -n '/...abc/p' input.txt
+#
+Matching Lines with Regex:
+
+You can use regular expressions to match and print lines that meet specific criteria:
+sed -n '/regex_pattern/p' input.txt
+#
+awk command that prints the first and second fields of a comma-separated file:
+
+awk -F',' '{print $1, $2}' input.csv
