@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter a number: " num
+read -p "Enter a number: " nu
 
 org=$num
 temp=0
