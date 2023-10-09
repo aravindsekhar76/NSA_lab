@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "enter a number: " n
+read -p "enter a number: " 
 
 temp=$n
 a=0
