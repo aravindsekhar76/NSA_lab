@@ -7,7 +7,7 @@ fact=1
 
 while [ $i -le $num ]
 do
-    fact=$(( $fact * $i )
+    fact=$(( $fact * $i ))
     i=$(( $i + 1 ))
 done
 
